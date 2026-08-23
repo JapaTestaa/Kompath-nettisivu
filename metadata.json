@@ -1,0 +1,6 @@
+{
+  "name": "Premium Therapy Website",
+  "description": "A visually elegant, calm, and trustworthy therapy website featuring individuals and business services with full Finnish and English translation support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

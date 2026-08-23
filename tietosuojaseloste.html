@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shnyar Tahir | Tietosuojaseloste (GDPR)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="sticky-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon-svg">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">KOMPATH</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links-desktop">
+        <a href="index.html" class="nav-item-btn" data-i18n="nav.home">Etusivu</a>
+        <a href="index.html#services" class="nav-item-btn" data-i18n="nav.services">Terapiapalvelut</a>
+        <a href="index.html#pricing" class="nav-item-btn" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a>
+        <a href="index.html#about" class="nav-item-btn" data-i18n="nav.about">Tietoja minusta</a>
+        <a href="index.html#contact" class="nav-contact-cta" data-i18n="nav.contact">Ota yhteyttä</a>
+        
+        <div class="lang-switcher-border">
+          <div class="lang-selector-group">
+            <button class="lang-btn" data-lang="fi" type="button" aria-label="Suomeksi">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#ffffff"/>
+                <rect x="5" width="3" height="11" fill="#002f6c"/>
+                <rect y="4" width="18" height="3" fill="#002f6c"/>
+              </svg>
+              <span class="lang-text">FI</span>
+            </button>
+            <button class="lang-btn" data-lang="en" type="button" aria-label="In English">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#012169"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#ffffff" stroke-width="2"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#C8102E" stroke-width="0.8"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#ffffff" stroke-width="3"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#C8102E" stroke-width="1.8"/>
+              </svg>
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="nav-controls-mobile">
+        <div class="lang-switcher-border">
+          <div class="lang-selector-group">
+            <button class="lang-btn" data-lang="fi" type="button" aria-label="Suomeksi">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#ffffff"/>
+                <rect x="5" width="3" height="11" fill="#002f6c"/>
+                <rect y="4" width="18" height="3" fill="#002f6c"/>
+              </svg>
+              <span class="lang-text">FI</span>
+            </button>
+            <button class="lang-btn" data-lang="en" type="button" aria-label="In English">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#012169"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#ffffff" stroke-width="2"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#C8102E" stroke-width="0.8"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#ffffff" stroke-width="3"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#C8102E" stroke-width="1.8"/>
+              </svg>
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+        <button class="mobile-menu-toggle-btn" id="mobile-menu-open" type="button" aria-label="Avaa valikko">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <button class="mobile-menu-toggle-btn hidden" id="mobile-menu-close" type="button" aria-label="Sulje valikko">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    
+      <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-content">
+        <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Etusivu</a>
+        <a href="index.html#services" class="mobile-nav-link" data-i18n="nav.services">Terapiapalvelut</a>
+        <a href="index.html#pricing" class="mobile-nav-link" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a>
+        <a href="index.html#about" class="mobile-nav-link" data-i18n="nav.about">Tietoja minusta</a>
+        <div class="mobile-cta-wrapper">
+          <a href="index.html#contact" class="mobile-nav-contact-cta" data-i18n="nav.contact">Ota yhteyttä</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main>
+    
+    <section class="section-py bg-stone-50 border-b border-stone-200/40">
+      <div class="container">
+        
+        <!-- Document layout container -->
+        <div class="privacy-card font-sans animate-fade-in" id="privacy-document-box">
+          <div class="privacy-badge-wrap">
+            <h1 class="font-serif font-light mb-2 tracking-tight text-stone-800 break-words" data-i18n="privacy.title">TIETOSUOJASELOSTE</h1>
+            <p class="font-sans text-stone-500 mb-0 text-sm max-w-xl mx-auto" data-i18n="privacy.subtitle">Tämä tietosuojaseloste sisältää EU:n yleisen tietosuoja-asetuksen (EU 2016/679) mukaiset tiedot henkilötietojen käsittelystä.</p>
+          </div>
+          
+          <div class="privacy-sections-container">
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span data-i18n="privacy.sec1Title">1. Rekisterinpitäjä</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-3" data-i18n="privacy.sec1Content1">
+                  <strong>Kompath</strong><br>
+                  Y-tunnus: 3455163-6<br>
+                  Sähköposti: <a href="mailto:kompath2024@gmail.com" class="text-stone-700 underline hover:text-stone-900">kompath2024@gmail.com</a>
+                </p>
+                <p data-i18n="privacy.sec1Content2">
+                  <strong>Tietosuojaa koskevissa asioissa yhteyshenkilö:</strong><br>
+                  Nimi: Shnyar Tahir<br>
+                  Sähköposti: <a href="mailto:kompath2024@gmail.com" class="text-stone-700 underline hover:text-stone-900">kompath2024@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span data-i18n="privacy.sec2Title">2. Henkilötietojen käsittelyn tarkoitus ja käsittelyperuste</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-3" data-i18n="privacy.sec2P1">
+                  Henkilötietojen käsittelyn tarkoituksena on sosiaalihuollon palveluiden järjestäminen, toteuttaminen, dokumentointi, seuranta, laskutus sekä palveluntuottajalle kuuluvien lakisääteisten velvoitteiden täyttäminen.
+                </p>
+                <p class="mb-2" data-i18n="privacy.sec2BasisLead">
+                  Henkilötietojen käsittely perustuu:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="privacy.sec2Basis1">lakiin sosiaali- ja terveydenhuollon asiakastietojen käsittelystä (703/2023)</li>
+                  <li data-i18n="privacy.sec2Basis2">lakiin sosiaalihuollon asiakkaan asemasta ja oikeuksista (812/2000)</li>
+                  <li data-i18n="privacy.sec2Basis3">muuhun soveltuvaan sosiaalihuollon lainsäädäntöön</li>
+                  <li data-i18n="privacy.sec2Basis4">EU:n yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan c alakohtaan (lakisääteinen velvoite)</li>
+                </ul>
+                <p class="mb-2" data-i18n="privacy.sec2DataLead">
+                  Käsiteltävät tiedot voivat sisältää esimerkiksi:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="privacy.sec2Data1">asiakkaan nimen</li>
+                  <li data-i18n="privacy.sec2Data2">henkilötunnuksen</li>
+                  <li data-i18n="privacy.sec2Data3">yhteystiedot</li>
+                  <li data-i18n="privacy.sec2Data4">huoltajien tai muiden laillisten edustajien tiedot</li>
+                  <li data-i18n="privacy.sec2Data5">palvelun toteuttamiseen liittyvät tiedot</li>
+                  <li data-i18n="privacy.sec2Data6">asiakassuunnitelmat</li>
+                  <li data-i18n="privacy.sec2Data7">asiakaskertomukset</li>
+                  <li data-i18n="privacy.sec2Data8">palvelusopimukset</li>
+                  <li data-i18n="privacy.sec2Data9">laskutukseen liittyvät tiedot</li>
+                </ul>
+                <p class="mb-3" data-i18n="privacy.sec2P2">
+                  Sosiaalihuollon asiakastiedot ovat erityisiin henkilötietoryhmiin kuuluvia tietoja, joiden käsittelyä säätelee erityislainsäädäntö.
+                </p>
+                <p class="mb-3" data-i18n="privacy.sec2P3">
+                  Henkilötietoja käsitellään luottamuksellisesti. Tietoja saavat käsitellä vain ne henkilöt, joiden työtehtävät sitä edellyttävät. Kaikkia asiakastietoja koskee lakisääteinen salassapito- ja vaitiolovelvollisuus.
+                </p>
+                <p class="mb-3" data-i18n="privacy.sec2P4">
+                  Asiakastietoja ei luovuteta sivullisille ilman lakiin perustuvaa oikeutta tai velvollisuutta taikka asiakkaan tai hänen laillisen edustajansa suostumusta.
+                </p>
+                <p data-i18n="privacy.sec2P5">
+                  Mikäli henkilötietoja käsitellään laskutuksen, kirjanpidon tai muiden lakisääteisten velvoitteiden hoitamiseksi ulkopuolisten palveluntarjoajien avulla, käsitellään ainoastaan tehtävän hoitamisen kannalta välttämättömiä tietoja.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span data-i18n="privacy.sec3Title">3. Henkilötietojen säilyttäminen ja suojaaminen</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-3" data-i18n="privacy.sec3P1">
+                  Asiakastiedot säilytetään paperimuodossa.
+                </p>
+                <p class="mb-3" data-i18n="privacy.sec3P2">
+                  Asiakasasiakirjat, asiakaskertomukset, asiakassuunnitelmat sekä muut palvelun toteuttamiseen liittyvät asiakirjat säilytetään lukitussa ja asianmukaisesti suojatussa tilassa siten, etteivät asiattomat henkilöt pääse tietoihin käsiksi.
+                </p>
+                <p class="mb-3" data-i18n="privacy.sec3P3">
+                  Asiakkaan tunnistetiedot ja muut asiakasasiakirjat säilytetään tietosuojan kannalta tarkoituksenmukaisella tavalla erillään toisistaan.
+                </p>
+                <p data-i18n="privacy.sec3P4">
+                  Asiakasasiakirjoja säilytetään kulloinkin voimassa olevan lainsäädännön mukaisesti. Säilytysajat määräytyvät asiakirjan tyypin ja käyttötarkoituksen perusteella.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                <span data-i18n="privacy.sec4Title">4. Rekisteröidyn oikeudet</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-2" data-i18n="privacy.sec4Lead">
+                  Rekisteröidyllä on oikeus:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="privacy.sec4Bullet1">saada tieto henkilötietojensa käsittelystä</li>
+                  <li data-i18n="privacy.sec4Bullet2">tarkastaa itseään koskevat tiedot</li>
+                  <li data-i18n="privacy.sec4Bullet3">pyytää virheellisten tai puutteellisten tietojen oikaisemista</li>
+                  <li data-i18n="privacy.sec4Bullet4">pyytää henkilötietojen käsittelyn rajoittamista tietosuoja-asetuksen mukaisissa tilanteissa</li>
+                  <li data-i18n="privacy.sec4Bullet5">tehdä valitus tietosuojavaltuutetulle</li>
+                </ul>
+                <p class="mb-3" data-i18n="privacy.sec4P1">
+                  Siltä osin kuin henkilötietojen käsittely ja säilyttäminen perustuvat lakiin, rekisteröidyllä ei ole oikeutta vaatia asiakastietojen poistamista eikä vastustaa niiden käsittelyä silloin, kun käsittely on välttämätöntä rekisterinpitäjän lakisääteisten velvoitteiden täyttämiseksi.
+                </p>
+                <p data-i18n="privacy.sec4P2">
+                  Rekisteröityä pyydetään toimittamaan henkilötietojen tarkastamista, oikaisemista tai muita oikeuksia koskevat pyynnöt kirjallisesti rekisterinpitäjälle.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+                <span data-i18n="privacy.sec5Title">5. Oikeus peruuttaa suostumus</span>
+              </h2>
+              <div class="privacy-indent">
+                <p data-i18n="privacy.sec5P1">
+                  Mikäli henkilötietojen käsittely perustuu asiakkaan tai hänen laillisen edustajansa antamaan suostumukseen, on suostumus mahdollista peruuttaa milloin tahansa. Suostumuksen peruuttaminen ei vaikuta ennen peruuttamista suoritetun käsittelyn lainmukaisuuteen eikä sellaiseen henkilötietojen käsittelyyn, joka perustuu lakiin tai muuhun tietosuoja-asetuksen mukaiseen käsittelyperusteeseen.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span data-i18n="privacy.sec6Title">6. Henkilötietojen antamisen välttämättömyys</span>
+              </h2>
+              <div class="privacy-indent">
+                <p data-i18n="privacy.sec6P1">
+                  Palvelun toteuttaminen edellyttää palvelun kannalta tarpeellisten henkilötietojen antamista. Mikäli välttämättömiä henkilötietoja ei anneta, palvelua ei välttämättä voida toteuttaa asianmukaisesti tai lain edellyttämällä tavalla.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+                <span data-i18n="privacy.sec7Title">7. Automaattinen päätöksenteko ja profilointi</span>
+              </h2>
+              <div class="privacy-indent">
+                <p data-i18n="privacy.sec7P1">
+                  Henkilötietojen käsittelyyn ei liity automaattista päätöksentekoa eikä profilointia.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span data-i18n="privacy.sec8Title">8. Tietosuojavaltuutetun yhteystiedot</span>
+              </h2>
+              <div class="privacy-indent">
+                <p data-i18n="privacy.sec8Content">
+                  Rekisteröidyllä on oikeus saattaa henkilötietojen käsittelyä koskeva asia tietosuojavaltuutetun käsiteltäväksi.<br>
+                  <strong>Tietosuojavaltuutetun toimisto</strong><br>
+                  <a href="https://www.tietosuoja.fi" target="_blank" rel="noopener noreferrer" class="text-stone-700 underline hover:text-stone-900">www.tietosuoja.fi</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                <span data-i18n="privacy.sec9Title">9. Verkkosivusto, evästeet ja ulkoiset linkit</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-3" data-i18n="privacy.sec9P1">
+                  Tämä verkkosivusto ei käytä seurantaevästeitä, analyysityökaluja eikä kolmannen osapuolen ulkoisia kirjasimia (fontteja). Sivuston selaaminen ei automaattisesti siirrä käyttäjien IP-osoitteita tai henkilötietoja ulkopuolisille kolmansille osapuolille.
+                </p>
+                <p data-i18n="privacy.sec9P2">
+                  Sivustolla on suoria linkkejä ulkoisiin palveluihin (kuten LinkedIn ja tietosuoja.fi). Tekniset verkkotiedot ja IP-osoite välittyvät näille kolmansille osapuolille ainoastaan silloin, kun kävijä erikseen klikkaa ulkoista linkkiä ja siirtyy kyseiseen palveluun.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid font-sans">
+      <div class="footer-col">
+        <div class="footer-brand-wrap">
+          <div class="footer-brand-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </div>
+          <span class="footer-brand-name">KOMPATH</span>
+        </div>
+        <p class="footer-brand-desc" data-i18n="footer.desc">Kompath on Lupa- ja valvontaviraston rekisteröimä yksityinen palveluntuottaja.</p>
+        <div class="footer-social-row">
+          <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:kompath2024@gmail.com" class="social-circle-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer.sitemap">Sivukartta</h3>
+        <ul class="footer-links-list">
+          <li><a href="/#home" data-i18n="nav.home">Etusivu</a></li>
+          <li><a href="/#services" data-i18n="nav.services">Terapiapalvelut</a></li>
+          <li><a href="/#pricing" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a></li>
+          <li><a href="/#about" data-i18n="nav.about">Tietoja minusta</a></li>
+          <li><a href="/#faq" data-i18n="nav.faq">Usein kysytyt kysymykset</a></li>
+          <li><a href="/#contact" data-i18n="nav.contact">Ota yhteyttä</a></li>
+        </ul>
+      </div>
+      
+      <!-- Coordinates details -->
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="contact.infoTitle">Yhteystiedot</h3>
+        <ul class="footer-list-details font-light">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:kompath2024@gmail.com">kompath2024@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer.registriesTitle">Rekisterit</h3>
+        <ul class="footer-list-reg font-light">
+          <li>
+            <div class="footer-reg-header">
+              <span>Valvira (Terhikki)</span>
+            </div>
+            <p class="footer-reg-desc" data-i18n="footer.valviraDesc">Laillistettu sosiaali- ja terveydenhuollon ammattihenkilö</p>
+          </li>
+          <li>
+            <span data-i18n="footer.businessIdLabel">Y-tunnus</span>
+            <p class="footer-reg-desc">3455163-6</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom-row font-sans">
+      <div data-i18n="footer.copyright">
+        &copy; 2026 Kompath. Kaikki oikeudet pidätetään.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="tietosuojaseloste.html" data-i18n="nav.privacy">Kompathin ja sivuston tietosuojaseloste</a>
+        <span class="footer-bottom-pipe">|</span>
+        <a href="omavalvontasuunnitelma.html" data-i18n="nav.omavalvonta">Kompathin omavalvontasuunnitelma</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent GDPR Cookie Consent Banner -->
+  <div class="cookie-consent-banner font-sans" id="cookie-consent">
+    <div class="cookie-content-wrapper">
+      <div class="cookie-text-block">
+        <div class="cookie-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-stone-600"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
+        </div>
+        <div class="cookie-text-wrap">
+          <span class="cookie-title" data-i18n="cookie.text">Evästeasetukset</span>
+          <p class="cookie-desc" data-i18n="cookie.text">Käytämme evästeitä varmistaaksemme parhaan käyttökokemuksen sivustollamme.</p>
+        </div>
+      </div>
+      <div class="cookie-actions-row">
+        <button class="cookie-decline-btn" id="cookie-decline" type="button" data-i18n="cookie.decline">Vain välttämättömät</button>
+        <button class="cookie-accept-btn" id="cookie-accept" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-3.5 h-3.5 mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-i18n="cookie.accept">Hyväksy kaikki</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

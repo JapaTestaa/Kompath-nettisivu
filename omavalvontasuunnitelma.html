@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shnyar Tahir | Omavalvontasuunnitelma</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="sticky-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon-svg">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">KOMPATH</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links-desktop">
+        <a href="index.html" class="nav-item-btn" data-i18n="nav.home">Etusivu</a>
+        <a href="index.html#services" class="nav-item-btn" data-i18n="nav.services">Terapiapalvelut</a>
+        <a href="index.html#pricing" class="nav-item-btn" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a>
+        <a href="index.html#about" class="nav-item-btn" data-i18n="nav.about">Tietoja minusta</a>
+        <a href="index.html#contact" class="nav-contact-cta" data-i18n="nav.contact">Ota yhteyttä</a>
+        
+        <div class="lang-switcher-border">
+          <div class="lang-selector-group">
+            <button class="lang-btn" data-lang="fi" type="button" aria-label="Suomeksi">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#ffffff"/>
+                <rect x="5" width="3" height="11" fill="#002f6c"/>
+                <rect y="4" width="18" height="3" fill="#002f6c"/>
+              </svg>
+              <span class="lang-text">FI</span>
+            </button>
+            <button class="lang-btn" data-lang="en" type="button" aria-label="In English">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#012169"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#ffffff" stroke-width="2"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#C8102E" stroke-width="0.8"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#ffffff" stroke-width="3"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#C8102E" stroke-width="1.8"/>
+              </svg>
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="nav-controls-mobile">
+        <div class="lang-switcher-border">
+          <div class="lang-selector-group">
+            <button class="lang-btn" data-lang="fi" type="button" aria-label="Suomeksi">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#ffffff"/>
+                <rect x="5" width="3" height="11" fill="#002f6c"/>
+                <rect y="4" width="18" height="3" fill="#002f6c"/>
+              </svg>
+              <span class="lang-text">FI</span>
+            </button>
+            <button class="lang-btn" data-lang="en" type="button" aria-label="In English">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#012169"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#ffffff" stroke-width="2"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#C8102E" stroke-width="0.8"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#ffffff" stroke-width="3"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#C8102E" stroke-width="1.8"/>
+              </svg>
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+        <button class="mobile-menu-toggle-btn" id="mobile-menu-open" type="button" aria-label="Avaa valikko">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <button class="mobile-menu-toggle-btn hidden" id="mobile-menu-close" type="button" aria-label="Sulje valikko">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-content">
+        <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">Etusivu</a>
+        <a href="index.html#services" class="mobile-nav-link" data-i18n="nav.services">Terapiapalvelut</a>
+        <a href="index.html#pricing" class="mobile-nav-link" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a>
+        <a href="index.html#about" class="mobile-nav-link" data-i18n="nav.about">Tietoja minusta</a>
+        <div class="mobile-cta-wrapper">
+          <a href="index.html#contact" class="mobile-nav-contact-cta" data-i18n="nav.contact">Ota yhteyttä</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main>
+    <section class="section-py bg-stone-50 border-b border-stone-200/40">
+      <div class="container">
+        
+        <!-- Document layout container -->
+        <div class="privacy-card font-sans animate-fade-in" id="omavalvonta-document-box">
+          <div class="privacy-badge-wrap">
+            <h1 class="font-serif font-light mb-2 tracking-tight text-stone-800 break-words" data-i18n="omavalvonta.title">OMAVALVONTASUUNNITELMA: KOMPATH</h1>
+          </div>
+
+          <div class="privacy-disclaimer-alert mb-8">
+            <p class="font-sans text-xs text-stone-500 leading-relaxed" data-i18n="omavalvonta.disclaimer">
+              Omavalvonta on sisäisen valvonnan osa-alue, joka tähtää palveluiden laadun ja palvelutasovaatimusten täyttymiseen. Palveluntuottajalla on vastuu toiminnan asianmukaisuudesta ja tuottamiensa palvelujen laadusta sekä asiakasturvallisuudesta.
+            </p>
+          </div>
+
+          <div class="privacy-sections-container">
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span data-i18n="omavalvonta.statutoryTitle">Lakisääteinen perusta</span>
+              </h2>
+              <div class="privacy-indent">
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.statutoryBullet1">Sosiaali- ja terveydenhuollon valvonnasta annettu laki (741/2023) 27 §</li>
+                  <li data-i18n="omavalvonta.statutoryBullet2">Valviran määräys 1/2024 palveluyksikön omavalvontasuunnitelmasta</li>
+                  <li data-i18n="omavalvonta.statutoryBullet3">Laki potilaan asemasta ja oikeuksista (785/1992)</li>
+                  <li data-i18n="omavalvonta.statutoryBullet4">Laki sosiaalihuollon asiakkaan asemasta ja oikeuksista (812/2000)</li>
+                  <li data-i18n="omavalvonta.statutoryBullet5">Asiakastietolaki (Laki sosiaali- ja terveydenhuollon asiakastietojen käsittelystä 703/2023)</li>
+                </ul>
+                <p class="text-xs text-stone-400 mt-4" data-i18n="omavalvonta.lastUpdated">Päivitetty viimeksi: 6.6.2026</p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span data-i18n="omavalvonta.sec1Title"><span class="sec-number">1.</span> PALVELUNTUOTTAJAN JA TOIMINNAN YLEISKUVAUS</span>
+              </h2>
+              <div class="privacy-indent">
+                <h3 class="text-stone-700 font-medium text-sm mt-3 mb-2" data-i18n="omavalvonta.sec1Sub1Title">1.1 Palveluntuottajan perustiedot</h3>
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec1Sub1Bullet1"><strong>Yrityksen nimi:</strong> Kompath</li>
+                  <li data-i18n="omavalvonta.sec1Sub1Bullet2"><strong>Y-tunnus:</strong> 3455163-6</li>
+                  <li data-i18n="omavalvonta.sec1Sub1Bullet3"><strong>Vastuuhenkilö:</strong> Shnyar Tahir (Yrittäjä)</li>
+                  <li data-i18n="omavalvonta.sec1Sub1Bullet4"><strong>Yhteystiedot:</strong> <a href="mailto:kompath2024@gmail.com" class="text-stone-700 underline hover:text-stone-900">kompath2024@gmail.com</a></li>
+                  <li data-i18n="omavalvonta.sec1Sub1Bullet5"><strong>Palveluyksikkö:</strong> Kompath – Sosiaali- ja terapiapalvelut</li>
+                </ul>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec1Sub2Title">1.2 Palvelut ja toiminta-ajatus</h3>
+                <p class="mb-3" data-i18n="omavalvonta.sec1Sub2Desc">
+                  Kompath tarjoaa tukea lapsiperheille ja auttaa edistämään hyvinvointia. Palveluita voidaan toteuttaa kotona, asiakkaan arkiympäristössä tai etäyhteydellä.
+                </p>
+                <p class="font-medium text-stone-700 mb-1" data-i18n="omavalvonta.sec1Sub2ListTitle">Tuotettavat palvelut:</p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec1Sub2Bullet1">Lapsiperheiden sosiaalityö ja -ohjaus</li>
+                  <li data-i18n="omavalvonta.sec1Sub2Bullet2">Varhaisen tuen palvelut ja perhetyö</li>
+                  <li data-i18n="omavalvonta.sec1Sub2Bullet3">Ratkaisukeskeinen lyhytterapia</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span data-i18n="omavalvonta.sec2Title"><span class="sec-number">2.</span> ARVOT JA TOIMINTAPERIAATTEET</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-3" data-i18n="omavalvonta.sec2Desc">
+                  Kompathin toiminta perustuu vahvaan eettiseen pohjaan ja asiakaslähtöisyyteen. Toimintaa ohjaavat seuraavat arvot:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec2Bullet1"><strong>Ammatillisuus</strong> – osaava, eettinen ja vastuullinen työote.</li>
+                  <li data-i18n="omavalvonta.sec2Bullet2"><strong>Avoimuus</strong> – rehellinen, läpinäkyvä ja kunnioittava vuorovaikutus.</li>
+                  <li data-i18n="omavalvonta.sec2Bullet3"><strong>Kunnioitus</strong> – jokaisen yksilöllisyyden, kokemusten ja rajojen arvostaminen.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span data-i18n="omavalvonta.sec3Title"><span class="sec-number">3.</span> ASIAKKAAN ASEMA JA OIKEUDET</span>
+              </h2>
+              <div class="privacy-indent">
+                <h3 class="text-stone-700 font-medium text-sm mt-3 mb-2" data-i18n="omavalvonta.sec3Sub1Title">3.1 Oikeus tietoon ja hyvään kohteluun</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec3Sub1Desc">
+                  Varmistamme, että asiakkaat ovat aina täysin tietoisia siitä, mitä palvelua he ostavat tai hankkivat. Ennen palvelun alkua käymme läpi:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec3Sub1Bullet1">Palvelun tavoitteet ja sisällön.</li>
+                  <li data-i18n="omavalvonta.sec3Sub1Bullet2">Palvelun keston ja mahdolliset kustannukset.</li>
+                  <li data-i18n="omavalvonta.sec3Sub1Bullet3">Asiakkaan oikeudet ja velvoitukset.</li>
+                </ul>
+                <p class="mt-2" data-i18n="omavalvonta.sec3Sub1Footer">
+                  Jokaisella on oikeus laadultaan hyvään kohteluun, joka kunnioittaa ihmisarvoa, vakaumusta ja yksityisyyttä (Potilaslaki 785/1992 ja Asiakaslaki 812/2000).
+                </p>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec3Sub2Title">3.2 Itsemääräämisoikeus</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec3Sub2Desc">
+                  Palvelut toteutetaan aina yhteisymmärryksessä asiakkaan kanssa. Kunnioitamme asiakkaan valintoja ja oikeutta kieltäytyä tarjotusta toimenpiteestä, jolloin etsimme yhdessä muita hyväksyttäviä tapoja tavoitteiden saavuttamiseksi. Kompath ei käytä toiminnassaan rajoitustoimenpiteitä.
+                </p>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec3Sub3Title">3.3 Lastensuojeluvelvoite</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec3Sub3Desc">
+                  Noudatamme lastensuojelulain (417/2007) 25 §:n mukaista ilmoitusvelvollisuutta. Mikäli työssä havaitaan lapsi, jonka hoidon ja huolenpidon tarve edellyttää selvittämistä, ilmoitus tehdään viipymättä sosiaaliviranomaisille lapsen edun turvaamiseksi.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span data-i18n="omavalvonta.sec4Title"><span class="sec-number">4.</span> ASIAKASTURVALLISUUS JA RISKIEHKÄISY</span>
+              </h2>
+              <div class="privacy-indent">
+                <h3 class="text-stone-700 font-medium text-sm mt-3 mb-2" data-i18n="omavalvonta.sec4Sub1Title">4.1 Fyysinen turvallisuus ja ensiapu</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec4Sub1Desc">
+                  Turvallisuus on ensisijainen tavoite kaikissa asiakastapaamisissa:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec4Sub1Bullet1"><strong>Ensiapuvalmius:</strong> Palveluntuottajalla on aina mukanaan asianmukaiset ensiapuvälineet kaikissa asiakastapaamisilla. Yrittäjä huolehtii ensiaputaitojen säännöllisestä päivityksestä.</li>
+                  <li data-i18n="omavalvonta.sec4Sub1Bullet2"><strong>Ympäristön huomioiminen:</strong> Kotikäynneillä ja arkiympäristössä tehtävässä työssä huomioidaan tilan turvallisuus ja mahdolliset poikkeustilanteet ennakkoon.</li>
+                  <li data-i18n="omavalvonta.sec4Sub1Bullet3"><strong>Tapaturmat ja vakuutus:</strong> Potilasvakuutus, joka kattaa hoitotilanteessa sattuneet vahingot.</li>
+                </ul>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec4Sub2Title">4.2 Palvelun laadun varmistaminen</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec4Sub2Desc">
+                  <strong>Ei lääkehoitoa:</strong> Kompath ei käsittele tai jaa lääkkeitä, mikä poistaa lääkitysturvallisuuteen liittyvät riskit.
+                </p>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec4Sub3Title">4.3 Vaaratapahtumien käsittely</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec4Sub3Desc">
+                  Kaikki "läheltä piti" -tilanteet ja mahdolliset vaaratapahtumat kirjataan ja analysoidaan. Vakavista poikkeamista ilmoitetaan valvontaviranomaisille (Valvontalaki 741/2023, 62 §).
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span data-i18n="omavalvonta.sec5Title"><span class="sec-number">5.</span> TIETOTURVA JA REKISTERINPITO</span>
+              </h2>
+              <div class="privacy-indent">
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec5Bullet1"><strong>Rekisterit:</strong> Käytössä on manuaalinen potilas- ja asiakasrekisteri, jota säilytetään lukitussa arkistokaapissa suojatussa tilassa.</li>
+                  <li data-i18n="omavalvonta.sec5Bullet2"><strong>Etäyhteydet:</strong> Etäterapiassa käytetään ainoastaan tietoturvallisia, terveydenhuollon vaatimukset täyttäviä videovälitteisiä alustoja.</li>
+                  <li data-i18n="omavalvonta.sec5Bullet3"><strong>Tietosuojavastaava:</strong> Shnyar Tahir vastaa rekisterinpitäjän velvoitteista ja tietosuojan toteutumisesta.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                <span data-i18n="omavalvonta.sec6Title"><span class="sec-number">6.</span> PALAUTE, MUISTUTUKSET JA SEURANTA</span>
+              </h2>
+              <div class="privacy-indent">
+                <h3 class="text-stone-700 font-medium text-sm mt-3 mb-2" data-i18n="omavalvonta.sec6Sub1Title">6.1 Asiakaspalaute</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec6Sub1Desc">
+                  Keräämme palautetta toiminnan kehittämiseksi:
+                </p>
+                <ul class="privacy-bullets">
+                  <li data-i18n="omavalvonta.sec6Sub1Bullet1">Suora suullinen palaute tapaamisten yhteydessä.</li>
+                  <li data-i18n="omavalvonta.sec6Sub1Bullet2">Anonyymi palaute sähköisen Google Forms -lomakkeen kautta, jota asiakas saa palvelusopimuksen allekirjoitettua.</li>
+                </ul>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec6Sub2Title">6.2 Muistutukset ja potilasasiavastaava</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec6Sub2Desc">
+                  Asiakkaalla on oikeus tehdä muistutus kokemastaan epäkohdasta. Lisäksi asiakkaita ohjeistetaan tarvittaessa olemaan yhteydessä hyvinvointialueen potilasasiavastaavaan, joka neuvoo ja avustaa oikeusturva-asioissa.
+                </p>
+
+                <h3 class="text-stone-700 font-medium text-sm mt-4 mb-2" data-i18n="omavalvonta.sec6Sub3Title">6.3 Omavalvonnan seurantaraportti</h3>
+                <p class="mb-2" data-i18n="omavalvonta.sec6Sub3Desc">
+                  Tämän suunnitelman toteutumista seurataan aktiivisesti. Seurannan tulokset julkaistaan kuuden kuukauden välein yrityksen verkkosivuilla tai muulla vastaavalla tavalla, jotta toiminnan laatu on julkisesti todennettavissa.
+                </p>
+              </div>
+            </div>
+
+            <div class="privacy-sec">
+              <h2 class="privacy-sec-title font-serif">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                <span data-i18n="omavalvonta.sec7Title"><span class="sec-number">7.</span> ALLEKIRJOITUS</span>
+              </h2>
+              <div class="privacy-indent">
+                <p class="mb-4" data-i18n="omavalvonta.sec7Desc">
+                  Tämä omavalvontasuunnitelma on vahvistettu ja otettu käyttöön Kompathin toiminnassa.
+                </p>
+                <div class="mt-4 pt-4 border-t border-stone-200/60 max-w-sm">
+                  <p class="mb-1 text-sm text-stone-500" data-i18n="omavalvonta.sec7DatePlace"><strong>Aika ja paikka:</strong> Helsingissä 6.6.2026</p>
+                  <p class="text-sm text-stone-500" data-i18n="omavalvonta.sec7SignatureLabel"><strong>Allekirjoitus:</strong></p>
+                  <div class="h-12 flex items-end mb-1">
+                    <span class="font-serif italic text-stone-800 text-lg">Shnyar Tahir</span>
+                  </div>
+                  <p class="text-xs text-stone-400" data-i18n="omavalvonta.sec7Signee">Shnyar Tahir Yrittäjä, Kompath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid font-sans">
+      <div class="footer-col">
+        <div class="footer-brand-wrap">
+          <div class="footer-brand-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </div>
+          <span class="footer-brand-name">KOMPATH</span>
+        </div>
+        <p class="footer-brand-desc" data-i18n="footer.desc">Kompath on Lupa- ja valvontaviraston rekisteröimä yksityinen palveluntuottaja.</p>
+        <div class="footer-social-row">
+          <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:kompath2024@gmail.com" class="social-circle-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer.sitemap">Sivukartta</h3>
+        <ul class="footer-links-list">
+          <li><a href="/#home" data-i18n="nav.home">Etusivu</a></li>
+          <li><a href="/#services" data-i18n="nav.services">Terapiapalvelut</a></li>
+          <li><a href="/#pricing" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a></li>
+          <li><a href="/#about" data-i18n="nav.about">Tietoja minusta</a></li>
+          <li><a href="/#faq" data-i18n="nav.faq">Usein kysytyt kysymykset</a></li>
+          <li><a href="/#contact" data-i18n="nav.contact">Ota yhteyttä</a></li>
+        </ul>
+      </div>
+      
+      <!-- Coordinates details -->
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="contact.infoTitle">Yhteystiedot</h3>
+        <ul class="footer-list-details font-light">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:kompath2024@gmail.com">kompath2024@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer.registriesTitle">Rekisterit</h3>
+        <ul class="footer-list-reg font-light">
+          <li>
+            <div class="footer-reg-header">
+              <span>Valvira (Terhikki)</span>
+            </div>
+            <p class="footer-reg-desc" data-i18n="footer.valviraDesc">Laillistettu sosiaali- ja terveydenhuollon ammattihenkilö</p>
+          </li>
+          <li>
+            <span data-i18n="footer.businessIdLabel">Y-tunnus</span>
+            <p class="footer-reg-desc">3455163-6</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom-row font-sans">
+      <div data-i18n="footer.copyright">
+        &copy; 2026 Kompath. Kaikki oikeudet pidätetään.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="tietosuojaseloste.html" data-i18n="nav.privacy">Kompathin ja sivuston tietosuojaseloste</a>
+        <span class="footer-bottom-pipe">|</span>
+        <a href="omavalvontasuunnitelma.html" data-i18n="nav.omavalvonta">Kompathin omavalvontasuunnitelma</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent GDPR Cookie Consent Banner -->
+  <div class="cookie-consent-banner font-sans" id="cookie-consent">
+    <div class="cookie-content-wrapper">
+      <div class="cookie-text-block">
+        <div class="cookie-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-stone-600"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
+        </div>
+        <div class="cookie-text-wrap">
+          <span class="cookie-title" data-i18n="cookie.text">Evästeasetukset</span>
+          <p class="cookie-desc" data-i18n="cookie.text">Käytämme evästeitä varmistaaksemme parhaan käyttökokemuksen sivustollamme.</p>
+        </div>
+      </div>
+      <div class="cookie-actions-row">
+        <button class="cookie-decline-btn" id="cookie-decline" type="button" data-i18n="cookie.decline">Vain välttämättömät</button>
+        <button class="cookie-accept-btn" id="cookie-accept" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-3.5 h-3.5 mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-i18n="cookie.accept">Hyväksy kaikki</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Translations state mapping -->
+  <script src="js/translations.js"></script>
+  <!-- Navigation module -->
+  <script src="js/navigation.js"></script>
+  <!-- Main dynamic logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>

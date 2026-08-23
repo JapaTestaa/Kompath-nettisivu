@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shnyar Tahir | Ratkaisukeskeinen Terapia & Coaching</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="sticky-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon-wrap">
+          <!-- Raw embedded SVG representing the Kompath logo motif -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="brand-icon-svg">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">KOMPATH</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links-desktop">
+        <a href="#home" class="nav-item-btn" data-i18n="nav.home">Etusivu</a>
+        <a href="#services" class="nav-item-btn" data-i18n="nav.services">Terapiapalvelut</a>
+        <a href="#pricing" class="nav-item-btn" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a>
+        <a href="#about" class="nav-item-btn" data-i18n="nav.about">Tietoja minusta</a>
+        <a href="#contact" class="nav-contact-cta" data-i18n="nav.contact">Ota yhteyttä</a>
+        
+        <div class="lang-switcher-border">
+          <div class="lang-selector-group">
+            <button class="lang-btn" data-lang="fi" type="button" aria-label="Suomeksi">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#ffffff"/>
+                <rect x="5" width="3" height="11" fill="#002f6c"/>
+                <rect y="4" width="18" height="3" fill="#002f6c"/>
+              </svg>
+              <span class="lang-text">FI</span>
+            </button>
+            <button class="lang-btn" data-lang="en" type="button" aria-label="In English">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#012169"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#ffffff" stroke-width="2"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#C8102E" stroke-width="0.8"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#ffffff" stroke-width="3"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#C8102E" stroke-width="1.8"/>
+              </svg>
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="nav-controls-mobile">
+        <div class="lang-switcher-border">
+          <div class="lang-selector-group">
+            <button class="lang-btn" data-lang="fi" type="button" aria-label="Suomeksi">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#ffffff"/>
+                <rect x="5" width="3" height="11" fill="#002f6c"/>
+                <rect y="4" width="18" height="3" fill="#002f6c"/>
+              </svg>
+              <span class="lang-text">FI</span>
+            </button>
+            <button class="lang-btn" data-lang="en" type="button" aria-label="In English">
+              <svg class="lang-flag-svg" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="11" fill="#012169"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#ffffff" stroke-width="2"/>
+                <path d="M0 0 L18 11 M18 0 L0 11" stroke="#C8102E" stroke-width="0.8"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#ffffff" stroke-width="3"/>
+                <path d="M9 0 V11 M0 5.5 H18" stroke="#C8102E" stroke-width="1.8"/>
+              </svg>
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+        <button class="mobile-menu-toggle-btn" id="mobile-menu-open" type="button" aria-label="Avaa valikko">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <button class="mobile-menu-toggle-btn hidden" id="mobile-menu-close" type="button" aria-label="Sulje valikko">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-content">
+        <a href="#home" class="mobile-nav-link" data-i18n="nav.home">Etusivu</a>
+        <a href="#services" class="mobile-nav-link" data-i18n="nav.services">Terapiapalvelut</a>
+        <a href="#pricing" class="mobile-nav-link" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a>
+        <a href="#about" class="mobile-nav-link" data-i18n="nav.about">Tietoja minusta</a>
+        <div class="mobile-cta-wrapper">
+          <a href="#contact" class="mobile-nav-contact-cta" data-i18n="nav.contact">Ota yhteyttä</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section id="home" class="hero-section section-py">
+      <div class="hero-radial-bg">
+        <svg viewBox="0 0 100 100" fill="none" stroke="rgba(197, 168, 128, 0.15)" stroke-width="0.25">
+          <circle cx="50" cy="50" r="40"></circle>
+          <circle cx="50" cy="50" r="30"></circle>
+          <line x1="10" y1="50" x2="90" y2="50"></line>
+          <line x1="50" y1="10" x2="50" y2="90"></line>
+        </svg>
+      </div>
+      
+      <div class="container animate-fade-in">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Column -->
+          <div class="hero-text-column">
+
+            <h1 class="hero-title font-serif" data-i18n="hero.title">Kompath – Tukea elämän eri vaiheissa</h1>
+            
+            <p class="hero-description" data-i18n="hero.description">
+              Kompath tarjoaa kokonaisvaltaista ja asiakaslähtöistä tukea lapsille, nuorille, aikuisille ja perheille elämän eri tilanteissa. Palveluihin kuuluvat lapsiperheiden sosiaalityö ja -ohjaus, varhaisen tuen palvelut sekä perhetyö, joiden tavoitteena on vahvistaa perheiden voimavaroja, arjen sujuvuutta ja hyvinvointia. Lisäksi Kompath tarjoaa ratkaisukeskeistä lyhytterapiapalvelua, joka auttaa asiakkaita löytämään konkreettisia keinoja haastavien tilanteiden käsittelyyn ja myönteisen muutoksen saavuttamiseen.
+            </p>
+            
+            <p class="hero-description" data-i18n="hero.description2">
+              Kompath on Lupa- ja valvontaviraston rekisteröimä yksityinen palveluntuottaja.
+            </p>
+            
+            <div class="hero-cta-buttons font-sans">
+              <a href="#contact" class="btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-4 h-4 mr-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span data-i18n="hero.ctaPrimary">Ota yhteyttä</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="arrow-icon w-4 h-4 ml-1.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#services" class="btn-secondary" data-i18n="hero.ctaSecondary">Tutustu palveluihin</a>
+            </div>
+          </div>
+          
+          <!-- Hero Illustration Column -->
+          <div class="hero-illustration-column">
+            <div class="hero-graphic-wrapper">
+              <!-- SVG Brand graphic -->
+              <svg viewBox="0 0 320 320" width="300" height="300" class="hero-ring-slow">
+                <!-- Background Outer Radial Ring -->
+                <circle cx="160" cy="160" r="140" fill="none" stroke="rgba(220, 214, 208, 0.45)" stroke-width="1"></circle>
+                <circle cx="160" cy="160" r="130" fill="none" stroke="rgba(220, 214, 208, 0.8)" stroke-width="2" stroke-dasharray="2 6"></circle>
+                <circle cx="160" cy="160" r="110" fill="none" stroke="rgba(197, 168, 128, 0.25)" stroke-width="1.5"></circle>
+                
+                <!-- Degree markings -->
+                <g stroke="rgba(120, 113, 108, 0.4)" stroke-width="1.5">
+                  <!-- North, South, East, West axes -->
+                  <line x1="160" y1="20" x2="160" y2="35"></line>
+                  <line x1="160" y1="285" x2="160" y2="300"></line>
+                  <line x1="20" y1="160" x2="35" y2="160"></line>
+                  <line x1="285" y1="160" x2="300" y2="160"></line>
+                  
+                  <!-- Secondary axis lines -->
+                  <g transform="rotate(45 160 160)">
+                    <line x1="160" y1="20" x2="160" y2="30"></line>
+                    <line x1="160" y1="290" x2="160" y2="300"></line>
+                    <line x1="20" y1="160" x2="30" y2="160"></line>
+                    <line x1="290" y1="160" x2="300" y2="160"></line>
+                  </g>
+                </g>
+
+                <!-- Central Brand Rose Dial -->
+                <g transform="rotate(22.5 160 160)">
+                  <!-- Brand dial spikes -->
+                  <polygon points="160,50 165,160 160,160" fill="rgba(197, 168, 128, 0.85)"></polygon>
+                  <polygon points="160,50 155,160 160,160" fill="rgba(142, 117, 80, 0.6)"></polygon>
+                  <polygon points="160,270 165,160 160,160" fill="rgba(142, 117, 80, 0.6)"></polygon>
+                  <polygon points="160,270 155,160 160,160" fill="rgba(197, 168, 128, 0.85)"></polygon>
+                  
+                  <polygon points="270,160 160,165 160,160" fill="rgba(197, 168, 128, 0.85)"></polygon>
+                  <polygon points="270,160 160,155 160,160" fill="rgba(142, 117, 80, 0.6)"></polygon>
+                  <polygon points="50,160 160,165 160,160" fill="rgba(142, 117, 80, 0.6)"></polygon>
+                  <polygon points="50,160 160,155 160,160" fill="rgba(197, 168, 128, 0.85)"></polygon>
+                </g>
+
+                <!-- Central Core Pin -->
+                <circle cx="160" cy="160" r="10" fill="#fcfbf9" stroke="rgba(142, 117, 80, 0.9)" stroke-width="2" class="hero-dial-pulse"></circle>
+                <circle cx="160" cy="160" r="4" fill="rgba(12, 10, 9, 0.9)"></circle>
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Dynamic Challenges list section from Page 5 of PDF -->
+        <div class="services-challenges-section font-sans border-t border-stone-200/40 pt-12 mt-16">
+          <div class="text-center max-w-2xl mx-auto">
+            <h2 class="challenges-section-title font-serif font-light text-2xl md:text-3xl text-stone-950" data-i18n="challenges.title">Mihin tilanteisiin ja haasteisiin tarjoan tukea?</h2>
+            <p class="challenges-section-subtitle font-sans font-light text-stone-600 mt-4 leading-relaxed" data-i18n="challenges.subtitle">Kompath tukee lapsia, nuoria, aikuisia ja perheitä arjen sujuvuuden, jaksamisen ja hyvinvoinnin vahvistamisessa muun muassa seuraavissa asioissa:</p>
+          </div>
+          
+          <div class="challenges-grid-container mt-10" id="challenges-grid">
+            <!-- Injected from main.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-py border-b border-stone-200/40">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="text-center">
+          <h2 class="section-title font-serif font-light" data-i18n="services.title">Terapiapalvelut</h2>
+        </div>
+
+        <!-- Dynamically rendered Services Grid -->
+        <div class="services-showcase-grid animate-fade-in" id="services-grid">
+          <!-- Dynamically injected card nodes from translations.js/main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-py bg-stone-50 border-b border-stone-200/40">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="text-center">
+          <h2 class="section-title font-serif font-light" data-i18n="pricing.title">Maksu- ja peruutusehdot</h2>
+        </div>
+
+        <div class="pricing-flex-grid animate-fade-in justify-center">
+          
+          <!-- Pricing summary/guideline card -->
+          <div class="pricing-policy-card font-sans w-full">
+            <!-- Part 1: Maksuehdot -->
+            <div class="pricing-policy-section">
+              <h3 class="pricing-policy-title font-serif font-light">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                <span data-i18n="pricing.paymentTitle">Maksuehdot</span>
+              </h3>
+              <p class="pricing-policy-desc font-sans font-light leading-relaxed" style="margin-bottom: 0.75rem;" data-i18n="pricing.paymentDesc">
+                Maksut tapahtuvat laskulla sähköpostitse, paperikirjeellä tai MobilePaylla tai PayPalilla. Asiakas voi maksaa ennen tai tapaamisten jälkeen. Etänä toteutettavien palveluiden maksu tulee olla suoritettuna viimeistään 24 tuntia ennen sovittua tapaamisaikaa.
+              </p>
+              <p class="pricing-policy-desc font-sans font-light leading-relaxed" data-i18n="pricing.paymentDesc2">
+                Laskun maksuehto on 14 vuorokautta laskun päiväyksestä, ellei toisin ole sovittu. Eräpäivän jälkeen maksamattomalle laskulle peritään viivästyskorkoa korkolain mukaisesti sekä mahdolliset perintäkulut.
+              </p>
+              
+              <!-- Payment method symbols row -->
+              <div class="payment-methods-row">
+                <div class="payment-method-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span data-i18n="pricing.paymentEmail">Sähköpostilasku</span>
+                </div>
+                <div class="payment-method-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  <span data-i18n="pricing.paymentPaper">Paperikirje</span>
+                </div>
+                <div class="payment-method-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                  <span>MobilePay</span>
+                </div>
+                <div class="payment-method-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                  <span>PayPal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Part 2: Palvelupaketin voimassaolo -->
+            <div class="pricing-policy-section">
+              <h3 class="pricing-policy-title font-serif font-light">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span data-i18n="pricing.validityTitle">Palvelupaketin voimassaolo</span>
+              </h3>
+              <p class="pricing-policy-desc font-sans font-light leading-relaxed" style="margin-bottom: 0.75rem;" data-i18n="pricing.validityDesc1">
+                Terapiapalveluista maksettu palvelupaketti on voimassa 6 kuukautta ostopäivästä. Asiakkaan tulee varata ja käyttää ostamansa terapiakäynnit tämän voimassaoloajan kuluessa.
+              </p>
+              <p class="pricing-policy-desc font-sans font-light leading-relaxed" data-i18n="pricing.validityDesc2">
+                Käyttämättä jääneitä terapiakäyntejä ei hyvitetä eikä palvelupaketin voimassaoloa jatketa, ellei asiasta ole etukäteen kirjallisesti sovittu. Mikäli palvelupaketin voimassaoloaika päättyy ennen kuin kaikki käynnit on käytetty, käyttämättä jääneet käynnit raukeavat. Jos asiakas haluaa jatkaa terapiaa voimassaoloajan päätyttyä, tulee palvelu ostaa uudelleen voimassa olevan hinnaston mukaisesti.
+              </p>
+            </div>
+            
+            <!-- Part 2: Peruutusehdot -->
+            <div class="pricing-cancellation-box">
+              <h3 class="pricing-policy-title font-serif font-light">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span data-i18n="pricing.cancelTitle">Peruutusehdot</span>
+              </h3>
+              <p class="cancel-desc" data-i18n="pricing.cancelDesc">
+                Sovittujen tapaamisten peruutukset tulee tehdä vähintään 24h aikana. Alle 24h sisällä perutuista tapaamisista peritään 50% varatun ajan hinnasta.
+              </p>
+              
+              <div class="pricing-cancellation-alert">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>
+                  <span data-i18n="pricing.cancelContactPrefix">Voit peruuttaa varatun ajan olemalla yhteydessä: </span>
+                  <a href="mailto:kompath2024@gmail.com" class="font-medium underline text-stone-900 hover:text-stone-700 transition-colors">kompath2024@gmail.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-py border-b border-stone-200/40">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="text-center">
+          <h2 class="section-title font-serif font-light" data-i18n="about.title">Tietoja minusta</h2>
+        </div>
+
+        <div class="about-grid animate-fade-in">
+          
+          <!-- Column 1: Portrait Picture Frame & Dedicated Intro Text Box -->
+          <div class="about-avatar-column">
+            <div class="portrait-and-intro-flex">
+              <div class="portrait-frame-card">
+                <div class="portrait-image-wrapper">
+                  <img 
+                    src="assets/images/shnyar_kuva2.jpg" 
+                    alt="Shnyar Tahir - Sertifioitu terapeutti" 
+                    class="portrait-img"
+                    width="941"
+                    height="1599"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div class="portrait-nametag">
+                  <h3 class="nametag-name" data-i18n="about.nametagName">Shnyar Tahir</h3>
+                </div>
+              </div>
+
+              <!-- Dedicated Text Box Next to Image -->
+              <div class="about-intro-box font-sans">
+                <div class="about-intro-badge">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-amber-deep inline-block mr-1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  <span data-i18n="about.introBadge">Valviran rekisteröimä ammattihenkilö</span>
+                </div>
+                <p class="about-intro-text font-sans" data-i18n="about.story1">
+                  Olen Valviran rekisteröimä sosiaalialan ammattihenkilö, jolla on yhteensä yli kahdeksan vuoden monipuolinen työkokemus sosiaali- ja varhaiskasvatusalalta.
+                </p>
+                <p class="about-intro-subtext font-sans" data-i18n="about.story2">
+                  Työskentelen asiakkaideni kanssa yksilöllisesti, luottamuksellisesti ja heidän voimavarojaan vahvistaen.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Credentials list and Core Values -->
+          <div class="about-bio-column">
+
+            <!-- Qualifications & Experience Grid layout -->
+            <div class="about-cards-layout">
+              <!-- Qualifications card block -->
+              <div class="qualifications-card font-sans">
+                <h3 class="qual-card-title">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                  <span data-i18n="about.educationTitle">Koulutus ja pätevyydet</span>
+                </h3>
+                <ul class="qual-list font-light" id="education-items-list">
+                  <!-- Javascript will inject list of credentials dynamically according to language selection -->
+                </ul>
+              </div>
+
+              <!-- Experience card block -->
+              <div class="qualifications-card font-sans">
+                <h3 class="qual-card-title">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  <span data-i18n="about.experienceTitle">Työkokemus</span>
+                </h3>
+                <ul class="qual-list font-light" id="experience-items-list">
+                  <!-- Javascript will inject list of experience dynamically according to language selection -->
+                </ul>
+              </div>
+            </div>
+
+            <!-- Core Values list -->
+            <div class="values-wrapper font-sans">
+              <h3 class="values-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span data-i18n="about.valuesTitle">Ammatilliset arvoni</span>
+              </h3>
+              
+              <div class="values-grid" id="core-values-box">
+                <!-- Javascript will inject values dynamically based on selected language -->
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-py border-b border-stone-200/40">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="text-center">
+          <h2 class="section-title font-serif font-light" data-i18n="contact.title">Ota yhteyttä</h2>
+        </div>
+
+        <div class="contact-grid animate-fade-in">
+          
+          <!-- Column 1: Contact Coordinates details card -->
+          <div class="contact-details-card font-sans">
+            <div class="contact-details-grid">
+              <div class="contact-info-col">
+                <h3 class="contact-card-heading font-serif font-light" data-i18n="contact.infoTitle">Yhteystiedot</h3>
+                <p class="contact-card-sub" data-i18n="contact.infoSubtitle">Ota yhteyttä sähköpostitse osoitteeseen <a href="mailto:kompath2024@gmail.com" class="contact-email-link">kompath2024@gmail.com</a>. Vastaan viesteihin mahdollisimman pian. Ennen työskentelyn aloittamista lähetän sinulle sähköpostitse palvelusopimuksen, johon voit tutustua rauhassa ja allekirjoittaa ennen yhteistyön alkamista. Samalla sovimme yhdessä työskentelyn aikatauluista ja käytännön järjestelyistä.<br><br>Jos olet kiinnostunut Palvelupaketti B:n terapiapalveluista, kerro yhteydenottoviestissäsi, toivotko tapaamiset toteutettavan etänä vai kasvokkain. Etävastaanottoja varten lähetän sähköpostitse ajanvarauslinkin, jonka kautta voit varata sinulle sopivat ajat. Mikäli toivot tapaamisia kasvokkain, sovimme yhdessä tapaamispaikasta ja käytännön järjestelyistä.</p>
+              </div>
+
+              <div class="contact-links-col">
+                <ul class="contact-coordinates-list">
+                  <li class="coordinate-item">
+                    <div class="coord-icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </div>
+                    <div class="coord-text-box">
+                      <span class="coord-label" data-i18n="contact.linkedinLabel">LinkedIn</span>
+                      <span class="coord-detail">
+                        <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer" class="hover:underline">www.linkedin.com/in/shnyar-tahir-3bb460178</a>
+                      </span>
+                    </div>
+                  </li>
+                  
+
+                  <li class="coordinate-item">
+                    <div class="coord-icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div class="coord-text-box">
+                      <span class="coord-label" data-i18n="contact.emailLabel">Sähköposti</span>
+                      <span class="coord-detail"><a href="mailto:kompath2024@gmail.com">kompath2024@gmail.com</a></span>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Security notice in coordinates panel -->
+                <div class="contact-security-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-stone-500 mr-2 flex-shrink-0"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span class="security-text font-light" data-i18n="contact.securityNotice">Huomioithan, että sähköposti ei ole täysin salattu viestintäkanava. Ethän lähetä arkaluonteisia terveystietojasi sähköpostitse.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-py bg-stone-50 border-b border-stone-200/40">
+      <div class="container">
+        
+        <div class="text-center">
+          <h2 class="section-title font-serif font-light text-stone-950" data-i18n="pricing.faqTitle">Usein kysytyt kysymykset</h2>
+        </div>
+
+        <!-- FAQ Accordion section -->
+        <div class="pricing-faqs-wrapper font-sans">
+          <!-- Accordion dynamic placeholder -->
+          <div class="faq-accordion-wrapper" id="faq-accordion">
+            <!-- Dynamically injected accordion components from main.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid font-sans">
+      
+      <!-- Brand & Logo motif -->
+      <div class="footer-col">
+        <div class="footer-brand-wrap">
+          <div class="footer-brand-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+          </div>
+          <span class="footer-brand-name">KOMPATH</span>
+        </div>
+        <p class="footer-brand-desc" data-i18n="footer.desc">Kompath on Lupa- ja valvontaviraston rekisteröimä yksityinen palveluntuottaja.</p>
+        <div class="footer-social-row">
+          <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:kompath2024@gmail.com" class="social-circle-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Sitemap Quick Links -->
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer.sitemap">Sivukartta</h3>
+        <ul class="footer-links-list">
+          <li><a href="#home" data-i18n="nav.home">Etusivu</a></li>
+          <li><a href="#services" data-i18n="nav.services">Terapiapalvelut</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Maksu- ja peruutusehdot</a></li>
+          <li><a href="#about" data-i18n="nav.about">Tietoja minusta</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">Usein kysytyt kysymykset</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Ota yhteyttä</a></li>
+        </ul>
+      </div>
+      
+      <!-- Coordinates details -->
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="contact.infoTitle">Yhteystiedot</h3>
+        <ul class="footer-list-details font-light">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="https://www.linkedin.com/in/shnyar-tahir-3bb460178" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:kompath2024@gmail.com">kompath2024@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Regulatory registries info -->
+      <div class="footer-col">
+        <h3 class="footer-col-title" data-i18n="footer.registriesTitle">Rekisterit</h3>
+        <ul class="footer-list-reg font-light">
+          <li>
+            <div class="footer-reg-header">
+              <span>Valvira (Terhikki)</span>
+            </div>
+            <p class="footer-reg-desc" data-i18n="footer.valviraDesc">Laillistettu sosiaali- ja terveydenhuollon ammattihenkilö</p>
+          </li>
+          <li>
+            <span data-i18n="footer.businessIdLabel">Y-tunnus</span>
+            <p class="footer-reg-desc">3455163-6</p>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <!-- Footer Bottom Row -->
+    <div class="container footer-bottom-row font-sans">
+      <div data-i18n="footer.copyright">
+        &copy; 2026 Kompath. Kaikki oikeudet pidätetään.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="tietosuojaseloste.html" data-i18n="nav.privacy">Kompathin ja sivuston tietosuojaseloste</a>
+        <span class="footer-bottom-pipe">|</span>
+        <a href="omavalvontasuunnitelma.html" data-i18n="nav.omavalvonta">Kompathin omavalvontasuunnitelma</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent GDPR Cookie Consent Banner -->
+  <div class="cookie-consent-banner font-sans" id="cookie-consent">
+    <div class="cookie-content-wrapper">
+      <div class="cookie-text-block">
+        <div class="cookie-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-stone-600"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
+        </div>
+        <div class="cookie-text-wrap">
+          <span class="cookie-title" data-i18n="cookie.text">Evästeasetukset</span>
+          <p class="cookie-desc" data-i18n="cookie.text">Käytämme evästeitä varmistaaksemme parhaan käyttökokemuksen sivustollamme. Evästeemme kunnioittavat täysin tietosuojaasi eivätkä seuraa terveystietojasi.</p>
+        </div>
+      </div>
+      <div class="cookie-actions-row">
+        <button class="cookie-decline-btn" id="cookie-decline" type="button" data-i18n="cookie.decline">Vain välttämättömät</button>
+        <button class="cookie-accept-btn" id="cookie-accept" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-3.5 h-3.5 mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span data-i18n="cookie.accept">Hyväksy kaikki</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Translations state mapping -->
+  <script src="js/translations.js"></script>
+  <!-- Navigation module -->
+  <script src="js/navigation.js"></script>
+  <!-- Main dynamic logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
