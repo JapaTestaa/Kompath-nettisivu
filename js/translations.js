@@ -410,7 +410,7 @@ const enTranslations = {
     story3: 'My main approach is solution-focused brief therapy—a practical and goal-oriented form of therapy focusing on present strengths and desired future outcomes rather than prolonged historical analysis. Together we look at where you are now, where you want to go, and how to take the next steps.',
     educationTitle: 'Qualifications & Experience',
     educationItems: [
-      'Bachelor of Social Services (AMK) & Early Childhood Education Social Worker',
+      'Bachelor of Social Services (AMK) & Bachelor in Early Childhood Education and Social Pedagogy',
       'Certified Solution-Focused Brief Therapist',
       'Studies in progress: Occupational Therapist (2025–2027)',
       'Studies in progress: Eco-social Work and Global Competence (M.Soc.Sc / YAMK) (2025–2026)'
