@@ -134,8 +134,8 @@ function initSmoothScroll() {
       const linkPath = parts[0];
       const targetHash = '#' + parts[1];
 
-      // If we are already on the home page and the link points to index.html#section or #section
-      if (isHomePage() && (linkPath === '' || linkPath === 'index.html' || linkPath === './index.html' || linkPath === '/koti')) {
+      // If we are already on the home page and the link points to index.html#section or /#section or #section
+      if (isHomePage() && (linkPath === '' || linkPath === '/' || linkPath === './' || linkPath === 'index.html' || linkPath === './index.html' || linkPath === '/koti')) {
         anchor.addEventListener('click', (e) => {
           const targetEl = document.querySelector(targetHash);
           if (targetEl) {
@@ -178,7 +178,7 @@ function initActiveNavHighlight() {
         navLinks.forEach(link => {
           link.classList.remove('active');
           const href = link.getAttribute('href');
-          if (href === `#${id}` || href === `index.html#${id}`) {
+          if (href === `#${id}` || href === `/#${id}` || href === `index.html#${id}` || (href && href.endsWith(`#${id}`))) {
             link.classList.add('active');
           }
         });
@@ -202,11 +202,12 @@ function initActiveNavHighlight() {
 }
 
 function updateActiveNav(targetId) {
+  const cleanTarget = targetId.startsWith('#') ? targetId.slice(1) : targetId;
   const navLinks = document.querySelectorAll('.nav-links-desktop .nav-item-btn, .nav-links-desktop .nav-contact-cta, .mobile-drawer .mobile-nav-link, .mobile-drawer .mobile-nav-contact-cta');
   navLinks.forEach(link => {
     link.classList.remove('active');
     const href = link.getAttribute('href');
-    if (href === targetId || href === `index.html${targetId}`) {
+    if (href === targetId || href === `/#${cleanTarget}` || href === `index.html${targetId}` || (href && href.endsWith(`#${cleanTarget}`))) {
       link.classList.add('active');
     }
   });

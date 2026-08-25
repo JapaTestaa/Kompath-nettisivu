@@ -15,6 +15,16 @@ function getInitialLanguage() {
   return 'fi';
 }
 
+function cleanUrlPath(pathname) {
+  if (pathname.endsWith('/index.html')) {
+    return pathname.slice(0, -10) || '/';
+  }
+  if (pathname === '/index.html' || pathname === 'index.html') {
+    return '/';
+  }
+  return pathname;
+}
+
 function syncUrlWithLanguage(lang) {
   const url = new URL(window.location.href);
   if (lang === 'en') {
@@ -22,7 +32,8 @@ function syncUrlWithLanguage(lang) {
   } else {
     url.searchParams.delete('lang');
   }
-  const newUrl = url.pathname + (url.search ? url.search : '') + (url.hash ? url.hash : '');
+  const cleanPath = cleanUrlPath(url.pathname);
+  const newUrl = cleanPath + (url.search ? url.search : '') + (url.hash ? url.hash : '');
   if (window.location.pathname + window.location.search + window.location.hash !== newUrl) {
     if (window.history && window.history.replaceState) {
       window.history.replaceState(null, '', newUrl);
@@ -31,15 +42,38 @@ function syncUrlWithLanguage(lang) {
 }
 
 function updateInternalPageLinks(lang) {
+  const isHome = typeof isHomePage === 'function' ? isHomePage() : (window.location.pathname === '/' || window.location.pathname === '' || window.location.pathname.endsWith('/index.html'));
   const pageLinks = document.querySelectorAll('a[href]');
   pageLinks.forEach(link => {
     const rawHref = link.getAttribute('href');
     if (!rawHref) return;
-    if (rawHref.startsWith('#') || rawHref.startsWith('mailto:') || rawHref.startsWith('tel:') || rawHref.startsWith('http')) return;
+    if (rawHref.startsWith('mailto:') || rawHref.startsWith('tel:') || rawHref.startsWith('http')) return;
     
     const [pathPart, hashPart] = rawHref.split('#');
     const [cleanPath] = pathPart.split('?');
-    if (cleanPath.endsWith('.html') || cleanPath === 'index.html' || cleanPath === 'tietosuojaseloste.html' || cleanPath === 'omavalvontasuunnitelma.html') {
+
+    // Home links
+    if (cleanPath === '' || cleanPath === '/' || cleanPath === 'index.html' || cleanPath === '/index.html' || cleanPath === './index.html') {
+      let targetHref;
+      if (isHome) {
+        targetHref = hashPart ? '#' + hashPart : '/';
+      } else {
+        targetHref = hashPart ? '/#' + hashPart : '/';
+      }
+      if (lang === 'en') {
+        if (isHome && hashPart) {
+          targetHref = '#' + hashPart;
+        } else if (hashPart) {
+          targetHref = '/?lang=en#' + hashPart;
+        } else {
+          targetHref = '/?lang=en';
+        }
+      }
+      link.setAttribute('href', targetHref);
+      return;
+    }
+
+    if (cleanPath.endsWith('.html') || cleanPath === 'tietosuojaseloste.html' || cleanPath === 'omavalvontasuunnitelma.html') {
       let targetHref = cleanPath;
       if (lang === 'en') {
         targetHref += '?lang=en';
