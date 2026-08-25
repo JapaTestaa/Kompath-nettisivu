@@ -3128,9 +3128,19 @@ header.sticky-header {
   word-break: break-word;
 }
 
+.privacy-card + .privacy-card,
+#sustainability-document-box {
+  margin-top: 3rem;
+}
+
 @media (min-width: 640px) {
   .privacy-card {
     padding: 2.5rem;
+  }
+  
+  .privacy-card + .privacy-card,
+  #sustainability-document-box {
+    margin-top: 4rem;
   }
 }
 

@@ -150,7 +150,7 @@ const fiTranslations = {
     title: 'Maksu- ja peruutusehdot',
     subtitle: 'Selkeät maksutavat ja reilut peruutusehdot sujuvan yhteistyön takaamiseksi.',
     paymentTitle: 'Maksuehdot',
-    paymentDesc: 'Maksut tapahtuvat laskulla sähköpostitse, paperikirjeellä tai MobilePaylla tai PayPalilla. Asiakas voi maksaa ennen tai tapaamisten jälkeen. Etänä toteutettavien palveluiden maksu tulee olla suoritettuna viimeistään 24 tuntia ennen sovittua tapaamisaikaa.',
+    paymentDesc: 'Maksut tapahtuvat laskulla sähköpostitse, paperikirjeellä, MobilePaylla tai PayPalilla. Asiakas voi maksaa ennen tai tapaamisten jälkeen. Etänä toteutettavien palveluiden maksu tulee olla suoritettuna viimeistään 24 tuntia ennen sovittua tapaamisaikaa.',
     paymentDesc2: 'Laskun maksuehto on 14 vuorokautta laskun päiväyksestä, ellei toisin ole sovittu. Eräpäivän jälkeen maksamattomalle laskulle peritään viivästyskorkoa korkolain mukaisesti sekä mahdolliset perintäkulut.',
     paymentEmail: 'Sähköpostilasku',
     paymentPaper: 'Paperilasku',
@@ -167,7 +167,7 @@ const fiTranslations = {
     faqs: [
       {
         q: 'Miten maksut ja peruutukset toimivat?',
-        a: 'Maksut tapahtuvat laskulla sähköpostitse, paperikirjeellä tai MobilePaylla tai PayPalilla tapaamisen jälkeen tai sitä ennen. Etänä toteutettavien palveluiden maksun tulee olla suoritettuna viimeistään 24 tuntia ennen sovittua tapaamisaikaa. Sovittujen tapaamisten peruutukset tulee tehdä viimeistään 24 tuntia ennen tapaamista. Alle 24 tunnin sisällä perutuista tapaamisista peritään 50 % varatun ajan hinnasta. Peruutuksen voi tehdä sähköpostitse osoitteeseen <a href="mailto:kompath2024@gmail.com" class="contact-email-link">kompath2024@gmail.com</a>.'
+        a: 'Maksut tapahtuvat laskulla sähköpostitse, paperikirjeellä, MobilePaylla tai PayPalilla tapaamisen jälkeen tai sitä ennen. Etänä toteutettavien palveluiden maksun tulee olla suoritettuna viimeistään 24 tuntia ennen sovittua tapaamisaikaa. Sovittujen tapaamisten peruutukset tulee tehdä viimeistään 24 tuntia ennen tapaamista. Alle 24 tunnin sisällä perutuista tapaamisista peritään 50 % varatun ajan hinnasta. Peruutuksen voi tehdä sähköpostitse osoitteeseen <a href="mailto:kompath2024@gmail.com" class="contact-email-link">kompath2024@gmail.com</a>.'
       },
       {
         q: 'Kirjataanko tietojani sähköisiin potilastietojärjestelmiin tai Kanta-palveluun?',
@@ -297,6 +297,33 @@ const fiTranslations = {
     sec7DatePlace: '<strong>Aika ja paikka:</strong> Helsingissä 6.6.2026',
     sec7SignatureLabel: '<strong>Allekirjoitus:</strong>',
     sec7Signee: 'Shnyar Tahir Yrittäjä, Kompath'
+  },
+  sustainability: {
+    title: 'KESTÄVÄ KEHITYS: KOMPATH',
+    ecoTitle: 'Ekologinen kestävyys',
+    ecoLead: 'Ekologista kestävyyttä tuetaan arjen valinnoilla, ennakoinnilla ja resurssien optimoinnilla.',
+    eco1: 'Paperia käytetään kohtuudella ja sähköisiä palveluita suositaan.',
+    eco2: 'Työmatkoilla hyödynnetään kävelyä, pyöräilyä ja julkista liikennettä.',
+    eco3: 'Terapiaa voidaan järjestää sovitusti luonnossa ja ulkoilmassa.',
+    eco4: 'Etätyötä ja etävastaanottoja hyödynnetään silloin, kun ne palvelevat asiakkaan tarpeita.',
+    eco5: 'Aikaa, liikkumista ja tilojen käyttöä optimoidaan ennakoivalla suunnittelulla.',
+    eco6: 'Työn joustavuutta hyödynnetään tilanteen ja tarpeen mukaan.',
+    socTitle: 'Sosiaalinen kestävyys',
+    socLead: 'Sosiaalista kestävyyttä vahvistetaan kunnioituksella, läpinäkyvyydellä ja ammatillisuudella.',
+    soc1: 'Asiakkaan tarpeita ja itsemääräämisoikeutta kunnioitetaan.',
+    soc2: 'Asiakasta ei sidota tarpeettomiin tapaamisiin tai pitkiin asiakkuuksiin.',
+    soc3: 'Palvelun määrä ja sisältö optimoidaan todellisen tarpeen mukaan.',
+    soc4: 'Kohtuuhintaisella hinnoittelulla edistetään palveluiden saavutettavuutta.',
+    soc5: 'Perhetyö suunnitellaan perheen tilanteeseen sopivaksi ja palvelun kokonaisuutta optimoidaan tavoitteiden mukaisesti.',
+    soc6: 'Luottamusta rakennetaan avoimuudella ja selkeällä viestinnällä.',
+    econTitle: 'Taloudellinen kestävyys',
+    econLead: 'Taloudellista kestävyyttä tuetaan resurssien vastuullisella käytöllä ja toiminnan jatkuvalla kehittämisellä.',
+    econ1: 'Aikaa ja resursseja kohdennetaan ja optimoidaan tarkoituksenmukaisesti.',
+    econ2: 'Perutuista tapaamisista ilmoitetaan mahdollisimman pian ylimääräisten kustannusten välttämiseksi.',
+    econ3: 'Kohtuuhintaisella hinnoittelulla mahdollistetaan palveluiden saavutettavuus.',
+    econ4: 'Digitaalisia palveluita ja etätapaamisia hyödynnetään joustavasti.',
+    econ5: 'Toimintaa kehitetään pitkäjänteisesti ja asiakastarpeita ennakoiden.',
+    econ6: 'Palveluiden vaikuttavuutta ja resurssien käyttöä arvioidaan kokonaisuutena.'
   },
   privacy: {
     title: 'TIETOSUOJASELOSTE',
@@ -504,7 +531,7 @@ const enTranslations = {
     title: 'Terms of Payment & Cancellation',
     subtitle: 'Transparent payment methods and fair cancellation policies for a smooth experience.',
     paymentTitle: 'Payment Terms',
-    paymentDesc: 'Payments are made via email invoice, paper invoice, or MobilePay or PayPal. The client can pay before or after the sessions. For remote services, payment must be completed at least 24 hours before the scheduled time.',
+    paymentDesc: 'Payments are made via email invoice, paper invoice, MobilePay, or PayPal. The client can pay before or after the sessions. For remote services, payment must be completed at least 24 hours before the scheduled time.',
     paymentDesc2: 'The payment term for invoices is 14 days from the invoice date, unless otherwise agreed. Invoices unpaid after the due date will be subject to late payment interest in accordance with the Interest Act, as well as any collection costs.',
     paymentEmail: 'Email invoice',
     paymentPaper: 'Paper invoice',
@@ -521,7 +548,7 @@ const enTranslations = {
     faqs: [
       {
         q: 'How do payments and cancellations work?',
-        a: 'Payments are made via email invoice, paper letter, or MobilePay or PayPal after or before the session. For remote services, payment must be completed at least 24 hours before the scheduled time. Cancellations must be made at least 24 hours in advance. Cancellations made less than 24 hours before the session will be charged 50% of the price. Cancellations can be sent via email to <a href="mailto:kompath2024@gmail.com" class="contact-email-link">kompath2024@gmail.com</a>.'
+        a: 'Payments are made via email invoice, paper letter, MobilePay, or PayPal after or before the session. For remote services, payment must be completed at least 24 hours before the scheduled time. Cancellations must be made at least 24 hours in advance. Cancellations made less than 24 hours before the session will be charged 50% of the price. Cancellations can be sent via email to <a href="mailto:kompath2024@gmail.com" class="contact-email-link">kompath2024@gmail.com</a>.'
       },
       {
         q: 'Is my data recorded in electronic patient record systems or Kanta?',
@@ -651,6 +678,33 @@ const enTranslations = {
     sec7DatePlace: '<strong>Date and place:</strong> Helsinki, June 6, 2026',
     sec7SignatureLabel: '<strong>Signature:</strong>',
     sec7Signee: 'Shnyar Tahir, Entrepreneur, Kompath'
+  },
+  sustainability: {
+    title: 'SUSTAINABLE DEVELOPMENT: KOMPATH',
+    ecoTitle: 'Ecological Sustainability',
+    ecoLead: 'Ecological sustainability is supported through daily choices, anticipation, and resource optimization.',
+    eco1: 'Paper is used in moderation, and digital services are preferred.',
+    eco2: 'Walking, cycling, and public transit are utilized for work-related commutes.',
+    eco3: 'Therapy sessions can be arranged outdoors in nature by agreement.',
+    eco4: 'Remote work and online sessions are utilized when they serve the client\'s needs.',
+    eco5: 'Time, commuting, and facility usage are optimized through forward planning.',
+    eco6: 'Work flexibility is utilized according to the situation and need.',
+    socTitle: 'Social Sustainability',
+    socLead: 'Social sustainability is strengthened through respect, transparency, and professionalism.',
+    soc1: 'Client needs and autonomy are respected.',
+    soc2: 'Clients are not bound to unnecessary meetings or extended engagements.',
+    soc3: 'The volume and content of services are optimized according to genuine needs.',
+    soc4: 'Reasonable pricing promotes service accessibility.',
+    soc5: 'Family work is tailored to each family\'s situation and optimized toward goals.',
+    soc6: 'Trust is built through openness and clear communication.',
+    econTitle: 'Economic Sustainability',
+    econLead: 'Economic sustainability is supported through responsible resource use and continuous operational development.',
+    econ1: 'Time and resources are allocated and optimized purposefully.',
+    econ2: 'Cancelled appointments are communicated as early as possible to avoid extra costs.',
+    econ3: 'Affordable pricing enables broad accessibility of services.',
+    econ4: 'Digital services and remote sessions are utilized flexibly.',
+    econ5: 'Operations are developed with a long-term perspective, anticipating client needs.',
+    econ6: 'Service effectiveness and resource utilization are evaluated holistically.'
   },
   privacy: {
     title: 'PRIVACY POLICY',
