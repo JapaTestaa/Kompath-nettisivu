@@ -318,12 +318,9 @@ const fiTranslations = {
     soc6: 'Luottamusta rakennetaan avoimuudella ja selkeällä viestinnällä.',
     econTitle: 'Taloudellinen kestävyys',
     econLead: 'Taloudellista kestävyyttä tuetaan resurssien vastuullisella käytöllä ja toiminnan jatkuvalla kehittämisellä.',
-    econ1: 'Aikaa ja resursseja kohdennetaan ja optimoidaan tarkoituksenmukaisesti.',
-    econ2: 'Perutuista tapaamisista ilmoitetaan mahdollisimman pian ylimääräisten kustannusten välttämiseksi.',
-    econ3: 'Kohtuuhintaisella hinnoittelulla mahdollistetaan palveluiden saavutettavuus.',
-    econ4: 'Digitaalisia palveluita ja etätapaamisia hyödynnetään joustavasti.',
-    econ5: 'Toimintaa kehitetään pitkäjänteisesti ja asiakastarpeita ennakoiden.',
-    econ6: 'Palveluiden vaikuttavuutta ja resurssien käyttöä arvioidaan kokonaisuutena.'
+    econ1: 'Aikaa ja resursseja käytetään tarkoituksenmukaisesti ja tehokkaasti, ja perutuista tapaamisista ilmoitetaan ajoissa.',
+    econ2: 'Kohtuuhintaiset ja digitaaliset palvelut tukevat saavutettavuutta ja joustavuutta.',
+    econ3: 'Toimintaa kehitetään pitkäjänteisesti, asiakastarpeita ennakoiden sekä vaikuttavuutta ja resurssien käyttöä arvioiden.'
   },
   privacy: {
     title: 'TIETOSUOJASELOSTE',
@@ -699,12 +696,9 @@ const enTranslations = {
     soc6: 'Trust is built through openness and clear communication.',
     econTitle: 'Economic Sustainability',
     econLead: 'Economic sustainability is supported through responsible resource use and continuous operational development.',
-    econ1: 'Time and resources are allocated and optimized purposefully.',
-    econ2: 'Cancelled appointments are communicated as early as possible to avoid extra costs.',
-    econ3: 'Affordable pricing enables broad accessibility of services.',
-    econ4: 'Digital services and remote sessions are utilized flexibly.',
-    econ5: 'Operations are developed with a long-term perspective, anticipating client needs.',
-    econ6: 'Service effectiveness and resource utilization are evaluated holistically.'
+    econ1: 'Time and resources are used appropriately and efficiently, and cancelled appointments are communicated in good time.',
+    econ2: 'Affordable and digital services support accessibility and flexibility.',
+    econ3: 'Operations are developed with a long-term perspective, anticipating client needs and evaluating effectiveness and resource utilization.'
   },
   privacy: {
     title: 'PRIVACY POLICY',
