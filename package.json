@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "build": "mkdir -p dist/tietosuojaseloste dist/omavalvontasuunnitelma dist/koti && cp -r css js assets index.html tietosuojaseloste.html omavalvontasuunnitelma.html server.js dist/ && cp tietosuojaseloste.html dist/tietosuojaseloste/index.html && cp omavalvontasuunnitelma.html dist/omavalvontasuunnitelma/index.html && cp index.html dist/koti/index.html",
+    "build": "mkdir -p dist/tietosuojaseloste dist/omavalvontasuunnitelma dist/koti && cp -r css js assets index.html tietosuojaseloste.html omavalvontasuunnitelma.html site.webmanifest favicon.ico CNAME server.js dist/ && cp tietosuojaseloste.html dist/tietosuojaseloste/index.html && cp omavalvontasuunnitelma.html dist/omavalvontasuunnitelma/index.html && cp index.html dist/koti/index.html",
     "lint": "echo 'Pure static HTML/CSS/JS contains no TS syntax to lint'"
   }
 }
