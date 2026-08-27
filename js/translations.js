@@ -53,6 +53,10 @@ const fiTranslations = {
     subtitle: 'Laillistettu sosiaalihuollon ammattihenkilö ja sertifioitu ratkaisukeskeinen lyhytterapeutti.',
     story1: 'Olen Valviran rekisteröimä sosiaalialan ammattihenkilö, jolla on yhteensä yli kahdeksan vuoden monipuolinen työkokemus sosiaali- ja varhaiskasvatusalalta.',
     story2: 'Työskentelen asiakkaideni kanssa yksilöllisesti, luottamuksellisesti ja heidän voimavarojaan vahvistaen.',
+    languagesTitle: 'Palvelukielet:',
+    lang1: 'Suomi',
+    lang2: 'Englanti',
+    lang3: 'Kurdi (sorani)',
     story3: 'Käytän pääasiallisena menetelmänäni ratkaisukeskeistä lyhytterapiaa. Se on käytännönläheinen ja tavoitteellinen terapiamuoto, jossa huomio kiinnitetään nykyhetken voimavaroihin ja tulevaisuuden toivottuun tilaan pitkien historiallisten analyysien sijaan. Yhdessä katsomme missä olet nyt, minne haluat päästä ja miten otat seuraavat askeleet.',
     educationTitle: 'Koulutus ja pätevyydet',
     educationItems: [
@@ -431,6 +435,10 @@ const enTranslations = {
     subtitle: 'Registered healthcare and social services professional with over 8 years of diverse experience.',
     story1: 'I am a social care professional registered with Valvira, with over eight years of diverse work experience in the social services and early childhood education sectors.',
     story2: 'I work with my clients individually, confidentially, and by empowering their personal resources.',
+    languagesTitle: 'Service Languages:',
+    lang1: 'Finnish',
+    lang2: 'English',
+    lang3: 'Kurdish (Sorani)',
     story3: 'My main approach is solution-focused brief therapy—a practical and goal-oriented form of therapy focusing on present strengths and desired future outcomes rather than prolonged historical analysis. Together we look at where you are now, where you want to go, and how to take the next steps.',
     educationTitle: 'Qualifications & Experience',
     educationItems: [
