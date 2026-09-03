@@ -144,7 +144,8 @@ const fiTranslations = {
           'Äkilliset elämäntilanteen muutokset (sairastuminen, erot)',
           'Riippuvuudet ja pakko-oireiset haasteet',
           'Seksuaalisuuteen liittyvät kysymykset',
-          'Kriisiluontoinen keskusteluapu ja tuki'
+          'Kriisiluontoinen keskusteluapu ja tuki',
+          'Ilmastoahdistus'
         ]
       }
     ]
@@ -525,7 +526,8 @@ const enTranslations = {
           'Sudden life transitions (illness, separation, divorce)',
           'Addictions and obsessive-compulsive issues',
           'Sexuality-related questions',
-          'Crisis-oriented supportive discussions'
+          'Crisis-oriented supportive discussions',
+          'Climate anxiety'
         ]
       }
     ]
