@@ -129,7 +129,7 @@ const fiTranslations = {
       },
       {
         title: 'Vanhemmuus & Perhe',
-        icon: 'heart',
+        icon: 'family',
         items: [
           'Vanhemmuuden haasteet ja kasvatuksen kysymykset',
           'Arjen ja rutiinien ongelmat (päivärytmi, nukkuminen)',
@@ -139,7 +139,7 @@ const fiTranslations = {
       },
       {
         title: 'Erityisteemat & Kriisit',
-        icon: 'shield-alert',
+        icon: 'umbrella',
         items: [
           'Äkilliset elämäntilanteen muutokset (sairastuminen, erot)',
           'Riippuvuudet ja pakko-oireiset haasteet',
@@ -511,7 +511,7 @@ const enTranslations = {
       },
       {
         title: 'Parenting & Family',
-        icon: 'heart',
+        icon: 'family',
         items: [
           'Parenting challenges and upbringing questions',
           'Daily routine and schedule problems (sleep, rhythm)',
@@ -521,7 +521,7 @@ const enTranslations = {
       },
       {
         title: 'Specialized Topics & Crises',
-        icon: 'shield-alert',
+        icon: 'umbrella',
         items: [
           'Sudden life transitions (illness, separation, divorce)',
           'Addictions and obsessive-compulsive issues',
@@ -776,7 +776,7 @@ const servicesData = {
         'Availability: Mon–Sat 7:00 AM – 10:00 PM',
         'Implementation: Client\'s own environment (not remote)',
         'Prices:',
-        'Optional Consultation: 80 € / max 1 hour (VAT 0%). After the consultation, the client decides whether to start the service',
+        'Initial consultation at half price (optional): 40 € / max 1 hour (VAT 0%). After the consultation, the client decides whether to start the service',
         'Client Relationship (service package): minimum 10 hours / 800 € (VAT 0%)',
         'Additional Hours: 80 € / hour (VAT 0%)'
       ],
@@ -830,7 +830,7 @@ const servicesData = {
         'Saatavuus: ma–la klo 7:00–22:00',
         'Toteutus: asiakkaan omassa toimintaympäristössä (ei etänä)',
         'Hinnat:',
-        'Ensikartoitus (valinnainen): 80 € / max 1 h (alv 0 %). Ensikartoituksen jälkeen asiakas päättää asiakkuuden aloittamisesta',
+        'Ensikartoitus puoleen hintaan (valinnainen): 40 € / max 1 h (alv 0 %). Ensikartoituksen jälkeen asiakas päättää asiakkuuden aloittamisesta',
         'Asiakkuus (palvelupaketti): minimi.10 h / 800 € (alv 0%)',
         'Lisätunnit: 80 €/h (alv 0%)'
       ],

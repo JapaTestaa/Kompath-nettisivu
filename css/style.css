@@ -81,6 +81,11 @@ h1, h2, h3, h4 {
   color: var(--text-950);
 }
 
+h2 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
 .font-serif {
   font-family: var(--font-serif);
 }
@@ -169,14 +174,14 @@ button, a {
 
 /* --- Spacing --- */
 .section-py {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
 @media (min-width: 768px) {
   .section-py {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -969,8 +974,13 @@ header.sticky-header {
   font-weight: 300;
   letter-spacing: -0.02em;
   color: var(--text-900);
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.challenges-section-title {
+  margin-top: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 @media (min-width: 640px) {
@@ -1334,14 +1344,14 @@ header.sticky-header {
   grid-template-cols: 1fr;
   gap: 3rem;
   align-items: start;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 1024px) {
   .about-grid {
     grid-template-cols: repeat(12, minmax(0, 1fr));
     gap: 4rem;
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
   }
 }
 
@@ -2020,7 +2030,7 @@ header.sticky-header {
   align-items: center;
   gap: 2rem;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -2037,7 +2047,7 @@ header.sticky-header {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
   }
 }
 
@@ -2058,6 +2068,7 @@ header.sticky-header {
   padding: 1.5rem;
   max-width: 540px;
   width: 100%;
+  justify-content: flex-start;
 }
 
 @media (min-width: 640px) {
@@ -2156,20 +2167,27 @@ header.sticky-header {
 
 @media (min-width: 640px) {
   .compact-card-main-content {
-    min-height: 520px;
+    min-height: 410px;
   }
 }
 
 @media (min-width: 1024px) {
   .compact-card-main-content {
-    min-height: 480px;
+    min-height: 385px;
   }
 }
 
 .service-agreement-section {
   border-top: 1px dashed rgba(120, 113, 108, 0.45);
-  padding-top: 1rem;
-  margin-top: 1rem;
+  padding-top: 0.875rem;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+#service-card-lapsiperheiden-palvelut > .service-agreement-section,
+#service-card-brief-therapy-package > .service-agreement-section {
+  margin-top: 0.75rem;
+  padding-top: 0.875rem;
 }
 
 .service-agreement-title {
@@ -2386,7 +2404,7 @@ header.sticky-header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin-top: 3.5rem;
+  margin-top: 2.8rem;
   width: 100%;
 }
 
@@ -2432,20 +2450,23 @@ header.sticky-header {
 }
 
 .challenge-category-icon-wrap {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: var(--border-radius-full);
   background-color: var(--amber-bg);
   color: var(--amber-deep);
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.25rem;
 }
 
 .challenge-category-icon-wrap svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .challenge-category-title {
@@ -2490,14 +2511,14 @@ header.sticky-header {
 
 /* --- PRICING PAGE --- */
 .pricing-flex-grid {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
 }
 
 @media (min-width: 1024px) {
   .pricing-flex-grid {
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
   }
 }
 
@@ -2660,12 +2681,12 @@ header.sticky-header {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 1024px) {
   .pricing-faqs-wrapper {
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
   }
 }
 
@@ -2757,13 +2778,13 @@ header.sticky-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
   .contact-grid {
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
   }
 }
 
