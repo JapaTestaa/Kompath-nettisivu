@@ -104,7 +104,7 @@ const fiTranslations = {
   },
   challenges: {
     title: 'Mihin tilanteisiin ja haasteisiin tarjoan tukea?',
-    subtitle: 'Kompath tukee lapsia, nuoria, aikuisia ja perheitä arjen sujuvuuden, jaksamisen ja hyvinvoinnin vahvistamisessa muun muassa seuraavissa asioissa:',
+    subtitle: 'Kompath tukee lapsia, nuoria, aikuisia ja perheitä arjen sujuvuudessa, jaksamisessa ja hyvinvoinnissa. Palvelut ovat avoimia myös LGBTQ+- asiakkaille, ja jokainen kohdataan yksilöllisesti ja yhdenvertaisesti. Tukea tarjotaan seuraaviin asioihin:',
     categories: [
       {
         title: 'Aikuiset',
@@ -486,7 +486,7 @@ const enTranslations = {
   },
   challenges: {
     title: 'What situations and challenges do I support?',
-    subtitle: 'Kompath supports children, youth, adults, and families in strengthening daily flow, resilience, and wellbeing in areas such as:',
+    subtitle: 'Kompath supports children, youth, adults, and families in everyday life, coping, and wellbeing. Services are also open to LGBTQ+ clients, and everyone is met individually and equally. Support is offered for the following:',
     categories: [
       {
         title: 'Adults',
